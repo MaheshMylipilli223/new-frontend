@@ -95,7 +95,7 @@ function Wordhunt() {
         else {
             alert('TRY AGAIN !!!')
         }
-        axios.post('http://localhost:8000/api/wordhunt/add', {
+        axios.post('https://backend-6wmd.onrender.com/api/wordhunt/add', {
             userId : localStorage.getItem('userId'),
             score : score
         }).then((response) => {

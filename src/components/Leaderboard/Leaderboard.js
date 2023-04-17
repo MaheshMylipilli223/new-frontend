@@ -12,14 +12,14 @@ function Leaderboard() {
   const [logicalRows, setLogicalRows] = useState(null)
 
   useEffect(() => {
-    axios.get('http://localhost:8000/api/logical/sort').then((response) => {
+    axios.get('https://backend-6wmd.onrender.com/api/logical/sort').then((response) => {
       setLogicalRows(response.data.data)
     })
   }, [logicalRows])
 
 
   useEffect(() => {
-    axios.get('http://localhost:8000/api/wordhunt/sort').then((response) => {
+    axios.get('https://backend-6wmd.onrender.com/api/wordhunt/sort').then((response) => {
       setWordHuntRows(response.data.data)
     })
   }, [wordHuntRows])

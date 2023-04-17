@@ -31,7 +31,7 @@ function Logical() {
             setX(Math.floor(Math.random() * dimension))
             setY(Math.floor(Math.random() * dimension))
         }else {
-            axios.post('http://localhost:8000/api/logical/add', {
+            axios.post('https://backend-6wmd.onrender.com/api/logical/add', {
                 userId : localStorage.getItem('userId'),
                 score : score
             }).then((response) => {

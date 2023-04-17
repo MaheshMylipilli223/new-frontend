@@ -18,7 +18,7 @@ export default function Signup() {
   const navigate = useNavigate()
 
   const handleSubmit = () => {
-      axios.post('http://localhost:8000/api/signup/user', {
+      axios.post('https://backend-6wmd.onrender.com/api/signup/user', {
       name : name,
       email : email,
       password : password
